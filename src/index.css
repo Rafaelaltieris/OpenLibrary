@@ -1,0 +1,63 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+  line-height: 1.5;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.container { width: min(100% - 2rem, 1080px); margin-inline: auto; }
+.cabecalho { background: #172554; color: white; }
+.cabecalho-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1rem;
+  flex-wrap: wrap;
+}
+.marca { font-weight: bold; font-size: 1.25rem; }
+nav { display: flex; gap: 1rem; flex-wrap: wrap; }
+nav a { color: #dbeafe; text-decoration: none; padding: .25rem; }
+nav a.active { color: white; text-decoration: underline; font-weight: bold; }
+main { padding-block: 2rem; }
+.grade-livros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 1rem;
+}
+.livro-card {
+  padding: 1.25rem;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: .75rem;
+  overflow-wrap: anywhere;
+}
+.livro-card h2 { font-size: 1.2rem; margin-top: 0; }
+a { color: #1e40af; }
+:focus-visible { outline: 3px solid #b45309; outline-offset: 3px; }
+.pular-conteudo {
+  position: absolute;
+  left: 1rem;
+  top: -10rem;
+  padding: .5rem;
+  background: white;
+  color: #172554;
+}
+.pular-conteudo:focus { top: .25rem; }
+input {
+  width: 100%;
+  padding: .75rem;
+  margin-block: .5rem 1rem;
+  border: 1px solid #6b7280;
+  border-radius: .4rem;
+  font: inherit;
+}
+
+.livro-capa{
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
